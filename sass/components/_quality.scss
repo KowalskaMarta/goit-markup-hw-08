@@ -4,16 +4,26 @@
   &__list {
     @include flex-position;
     gap: 30px;
+    flex-wrap: wrap;
+
+    @include desktop {
+      flex-wrap: nowrap;
+      flex-basis: auto;
+    }
   }
 
   &__icon {
     background: getColor("bgc-secondary");
-    width: 270px;
+    width: 450px;
     height: 120px;
     border-radius: 4px;
     padding-top: 25px;
     padding-bottom: 25px;
     @include flex-position;
+
+    @include desktop {
+      width: 270px;
+    }
   }
   &__title {
     color: getColor("primary");
@@ -21,11 +31,20 @@
     @include font($fw: 700, $fs: 14px, $lh: 1.17);
     margin-top: 30px;
     text-transform: uppercase;
+    text-align: center;
+
+    @include desktop {
+      text-align: left;
+    }
+    @include tablet {
+      text-align: left;
+    }
   }
 
   &__description {
     color: getColor("grey");
     @include font($fw: 400, $fs: 14px, $lh: 1.17);
     margin-top: 10px;
+    max-width: 450px;
   }
 }

@@ -72,5 +72,13 @@ nav {
 
   &__flex {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    @include desktop {
+      text-align: left;
+      flex-direction: row;
+    }
   }
 }

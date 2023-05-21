@@ -5,6 +5,18 @@
   align-items: center;
   text-decoration: none;
 
+  &--isHide {
+    display: none;
+    @include desktop {
+      display: flex;
+    }
+
+    @include tablet {
+      display: block;
+      margin-left: 101px;
+    }
+  }
+
   &__link {
     color: getColor("grey");
     display: flex;

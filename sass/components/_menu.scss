@@ -2,6 +2,18 @@
   @include flex-position;
   gap: 46px;
 
+  &--isHide {
+    display: none;
+
+    @include desktop {
+      @include flex-position;
+    }
+    @include tablet {
+      @include flex-position;
+      gap: 60px;
+    }
+  }
+
   &__item {
     @include font($fw: 500, $fs: 14px, $lh: 16px);
   }

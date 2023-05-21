@@ -9,6 +9,13 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 $phone-end: 767px;
 $tablet-start: 768px;
 $tablet-end: 1199px;

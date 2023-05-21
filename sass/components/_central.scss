@@ -10,7 +10,6 @@
     url(../images/main-foto.jpg);
   background-repeat: no-repeat;
   background-position: center;
-
   &__title {
     @include font($fw: 900, $fs: 44px, $lh: 1.36);
     color: getColor("bright");
