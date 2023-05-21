@@ -12,6 +12,12 @@
     @include flex-position;
     gap: 30px;
     margin-top: 50px;
+    flex-wrap: wrap;
+
+    @include desktop {
+      flex-wrap: nowrap;
+      flex-basis: auto;
+    }
   }
 
   &__link {
