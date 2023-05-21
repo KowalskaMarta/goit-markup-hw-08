@@ -702,7 +702,7 @@ nav {
   }
 }
 .clients__link {
-  width: 226px;
+  width: 210px;
   height: 92px;
   padding: 16px 52px;
   border: 1px solid #afb1b8;
@@ -724,21 +724,21 @@ nav {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients__link:is(:hover, :focus) {
-  border-color: #2196f3;
-  fill: #2196f3;
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .clients {
+  .clients__link {
     width: 226px;
     padding: 16px 60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .clients {
+  .clients__link {
     width: 170px;
     padding: 16px 32px;
   }
+}
+.clients__link:is(:hover, :focus) {
+  border-color: #2196f3;
+  fill: #2196f3;
 }
 
 .filters__list {

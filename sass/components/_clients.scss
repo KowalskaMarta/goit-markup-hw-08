@@ -21,7 +21,7 @@
   }
 
   &__link {
-    width: 226px;
+    width: 210px;
     height: 92px;
     padding: 16px 52px;
     border: 1px solid getColor("tertiary");
@@ -34,18 +34,19 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    @include tablet {
+      width: 226px;
+      padding: 16px 60px;
+    }
+
+    @include desktop {
+      width: 170px;
+      padding: 16px 32px;
+    }
+
     &:is(:hover, :focus) {
       border-color: getColor("secondary");
       fill: getColor("secondary");
     }
-  }
-  @include tablet {
-    width: 226px;
-    padding: 16px 60px;
-  }
-
-  @include desktop {
-    width: 170px;
-    padding: 16px 32px;
   }
 }
