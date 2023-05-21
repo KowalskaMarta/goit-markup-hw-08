@@ -26,6 +26,14 @@ ul {
 .section--top-fix {
   margin-top: -94px;
 }
+.section--isHide {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .section--isHide {
+    display: block;
+  }
+}
 
 .container {
   width: 100%;

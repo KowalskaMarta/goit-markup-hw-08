@@ -27,6 +27,12 @@ ul {
   &--top-fix {
     margin-top: -94px;
   }
+  &--isHide {
+    display: none;
+    @include desktop {
+      display: block;
+    }
+  }
 }
 
 .container {
