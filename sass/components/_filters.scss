@@ -1,0 +1,28 @@
+.filters {
+  &__list {
+    @include flex-position;
+    margin-bottom: 50px;
+    gap: 10px;
+  }
+
+  &__item {
+  }
+
+  &__button {
+    color: getColor("primary");
+    max-height: 38px;
+    width: auto;
+    background-color: getColor("bgc-secondary");
+    @include font($fw: 500, $fs: 16px, $lh: 1.6);
+    padding: 0px 22px;
+    box-shadow: none;
+    border: none;
+
+    &:is(:hover, :focus) {
+      color: getColor("bright");
+      background-color: getColor("secondary");
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+}

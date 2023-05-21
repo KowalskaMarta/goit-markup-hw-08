@@ -1,0 +1,41 @@
+.workers {
+  text-align: center;
+
+  &__title {
+    color: getColor("primary");
+    text-align: center;
+    padding-top: 0px;
+    @include font($fw: 700, $fs: 36px, $lh: 1.17);
+  }
+
+  &__list {
+    margin-top: 50px;
+    list-style: none;
+    @include flex-position;
+    gap: 30px;
+  }
+
+  &__item {
+    background-color: getColor("bright");
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  & figcaption {
+    padding: 30px 0;
+  }
+  &__description {
+    @include font($fw: 500, $fs: 16px, $lh: 1.17);
+
+    &--name {
+      padding-bottom: 10px;
+    }
+
+    &--text {
+      color: getColor("grey");
+      font-weight: 400;
+      padding-bottom: 16px;
+    }
+  }
+}

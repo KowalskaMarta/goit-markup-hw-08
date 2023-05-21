@@ -1,0 +1,39 @@
+.offer {
+  text-align: center;
+
+  &__title {
+    color: getColor("primary");
+    text-align: center;
+    padding-top: 0px;
+    @include font($fw: 700, $fs: 36px, $lh: 1.17);
+  }
+
+  &__list {
+    margin-top: 50px;
+    list-style: none;
+    @include flex-position;
+    gap: 30px;
+  }
+
+  &__item {
+    position: relative;
+
+    & > img {
+      vertical-align: middle;
+    }
+  }
+
+  &__subtitle {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    @include font($fw: 700, $fs: 14px, $lh: 1.17);
+    text-transform: uppercase;
+    color: getColor("bright");
+    background: getBackgroundColor("lighter");
+  }
+}

@@ -1,0 +1,35 @@
+.clients {
+  text-align: center;
+
+  &__title {
+    color: getColor("primary");
+    text-align: center;
+    padding-top: 0px;
+    @include font($fw: 700, $fs: 36px, $lh: 1.17);
+  }
+
+  &__item {
+    @include flex-position;
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  &__link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid getColor("tertiary");
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: getColor("tertiary");
+    transition-property: fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:is(:hover, :focus) {
+      border-color: getColor("secondary");
+      fill: getColor("secondary");
+    }
+  }
+}

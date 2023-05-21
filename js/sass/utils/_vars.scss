@@ -1,0 +1,31 @@
+@use "sass:string";
+
+$fonts: (
+  "rob": "'Roboto', sans-serif",
+  "ral": "'Raleway', sans-serif",
+);
+
+$colors: (
+  "primary": #212121,
+  "secondary": #2196f3,
+  "tertiary": #afb1b8,
+  "bright": #ffffff,
+  "bgc-secondary": #f5f4fa,
+  "grey": #757575,
+);
+
+$background-color: (
+  "lighter": rgba(47, 48, 58, 0.8),
+);
+
+@function getColor($color) {
+  @return map-get($colors, $color);
+}
+
+@function getBackgroundColor($bg-color) {
+  @return map-get($background-color, $bg-color);
+}
+
+@function getFont($font) {
+  @return string.unquote(map-get($fonts, $font));
+}

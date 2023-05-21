@@ -1,0 +1,48 @@
+.social {
+  @include flex-position;
+
+  &--footer {
+    margin-top: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 70px;
+    gap: 0;
+  }
+
+  &__links {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__link {
+    @include flex-position;
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    padding: 12px;
+    fill: getColor("tertiary");
+    transition-property: fill, background-color, border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:is(:hover, :focus) {
+      fill: getColor("bright");
+      background-color: getColor("secondary");
+    }
+
+    &--footer {
+      fill: getColor("bright");
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+  &__title {
+    @include font($fw: 700, $fs: 14px, $lh: 1.15);
+    margin-bottom: 20px;
+
+    &--footer {
+      text-transform: uppercase;
+      color: getColor("bright");
+    }
+  }
+}

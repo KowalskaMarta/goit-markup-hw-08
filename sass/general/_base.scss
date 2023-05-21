@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: {
+    family: getFont("rob");
+  }
+  color: getColor("primary");
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &--bg-decoration {
+    background-color: getColor("bgc-secondary");
+  }
+  &--top-fix {
+    margin-top: -94px;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  border-bottom: 1px solid getBorderColor("head-border");
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+.footer {
+  background-color: getBackgroundColor("footer-bg");
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__flex {
+    display: flex;
+  }
+}
