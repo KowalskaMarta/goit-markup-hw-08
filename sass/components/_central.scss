@@ -7,26 +7,31 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/main-foto480.jpg);
+    url(../images/main-foto-480.jpg);
   background-repeat: no-repeat;
   background-position: center;
 
-  // @include desktop {
-  //   padding: 200px 0;
-  //   background-image: linear-gradient(
-  //       rgba(47, 48, 58, 0.4),
-  //       rgba(47, 48, 58, 0.4)
-  //     ),
-  //     url(../images/main-foto.jpg);
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  // }
-}
-&__title {
-  @include font($fw: 900, $fs: 26px, $lh: 1.6);
-  color: getColor("bright");
-  text-transform: uppercase;
-  text-align: center;
-  // padding: 0 200px;
-  margin-bottom: 30px;
+  @include desktop {
+    padding: 200px 0;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/main-foto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__title {
+    @include font($fw: 900, $fs: 26px, $lh: 1.6);
+    color: getColor("bright");
+    text-transform: uppercase;
+    text-align: center;
+    // padding: 0 200px;
+    margin-bottom: 30px;
+
+    @include desktop {
+      @include font($fw: 900, $fs: 44px, $lh: 1.4);
+      padding: 0 200px;
+    }
+  }
 }
