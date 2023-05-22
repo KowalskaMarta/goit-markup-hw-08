@@ -11,6 +11,18 @@
     }
   }
 
+  &__item {
+    width: 450px;
+
+    @include tablet {
+      width: 354px;
+    }
+
+    @include desktop {
+      width: 270px;
+    }
+  }
+
   &__icon {
     background: getColor("bgc-secondary");
     width: 100%;
