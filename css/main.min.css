@@ -137,6 +137,11 @@ nav {
           justify-content: center;
   margin-left: 100px;
 }
+@media screen and (min-width: 1200px) {
+  .logo--position {
+    margin-left: 0;
+  }
+}
 
 .menu {
   display: -webkit-box;
@@ -658,25 +663,38 @@ nav {
 .workers__list {
   margin-top: 50px;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .workers__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .workers__item {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 450px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
 }
 .workers figcaption {
-  padding: 30px 0;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .workers__description {
   font-weight: 500;
@@ -1009,6 +1027,7 @@ nav {
 @media screen and (min-width: 1200px) {
   .newsletter__tittle {
     margin-bottom: 20px;
+    margin-top: 0;
   }
 }
 .newsletter__input {
