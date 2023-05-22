@@ -2,20 +2,23 @@
   @include flex-position;
   background-color: #2f303a;
   text-align: center;
-  padding: 200px 0;
+  // padding: 200px 0;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/main-foto.jpg);
+    url(../images/main-foto480.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  // url(../images/main-foto.jpg);
+  // background-repeat: no-repeat;
+  // background-position: center;
   &__title {
-    @include font($fw: 900, $fs: 44px, $lh: 1.36);
+    @include font($fw: 900, $fs: 26px, $lh: 1.6);
     color: getColor("bright");
     text-transform: uppercase;
     text-align: center;
+    // padding: 0 200px;
     margin-bottom: 30px;
-    padding: 0 200px;
   }
 }

@@ -48,7 +48,6 @@
   }
 
   &__button {
-    margin-left: 12px;
     display: inline-flex;
     align-items: center;
     fill: getColor("bright");
@@ -57,5 +56,9 @@
     & > svg {
       margin-left: 22px;
     }
+  }
+  @include desktop {
+    margin-top: 12px;
+    margin-left: 78px;
   }
 }

@@ -8,22 +8,17 @@
 
     @include desktop {
       flex-wrap: nowrap;
-      flex-basis: auto;
     }
   }
 
   &__icon {
     background: getColor("bgc-secondary");
-    width: 450px;
+    width: 100%;
     height: 120px;
     border-radius: 4px;
     padding-top: 25px;
     padding-bottom: 25px;
-    @include flex-position;
-
-    @include desktop {
-      width: 270px;
-    }
+    @include flex-center;
   }
   &__title {
     color: getColor("primary");

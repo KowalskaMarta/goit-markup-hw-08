@@ -128,6 +128,15 @@ nav {
 .logo--footer {
   margin-right: 0;
 }
+.logo--position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 100px;
+}
 
 .menu {
   display: -webkit-box;
@@ -216,21 +225,19 @@ nav {
           justify-content: center;
   background-color: #2f303a;
   text-align: center;
-  padding: 200px 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main-foto.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-foto.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main-foto480.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-foto480.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .central__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
-  padding: 0 200px;
 }
 
 .button {
@@ -543,13 +550,11 @@ nav {
   .quality__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
   }
 }
 .quality__icon {
   background: #f5f4fa;
-  width: 450px;
+  width: 100%;
   height: 120px;
   border-radius: 4px;
   padding-top: 25px;
@@ -557,17 +562,12 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-@media screen and (min-width: 1200px) {
-  .quality__icon {
-    width: 270px;
-  }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .quality__title {
   color: #212121;
@@ -720,6 +720,7 @@ nav {
 @media screen and (min-width: 1200px) {
   .social--footer {
     margin-left: 70px;
+    margin-top: 0;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1050,7 +1051,6 @@ nav {
   color: rgba(255, 255, 255, 0.6);
 }
 .newsletter__button {
-  margin-left: 12px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1062,4 +1062,10 @@ nav {
 }
 .newsletter__button > svg {
   margin-left: 22px;
+}
+@media screen and (min-width: 1200px) {
+  .newsletter {
+    margin-top: 12px;
+    margin-left: 78px;
+  }
 }/*# sourceMappingURL=main.min.css.map */

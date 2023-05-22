@@ -14,4 +14,10 @@
   &--footer {
     margin-right: 0;
   }
+
+  &--position {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+  }
 }
