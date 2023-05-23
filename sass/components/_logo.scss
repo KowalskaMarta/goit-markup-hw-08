@@ -2,7 +2,18 @@
   @include font($fw: 700, $fs: 26px, $lh: 1.17);
   font-family: getFont("ral");
   color: getColor("secondary");
-  margin-right: 93px;
+
+  @include tablet {
+    margin-right: 83px;
+  }
+
+  @include desktop {
+    margin-right: 93px;
+  }
+
+  &__header {
+    margin-left: 15px;
+  }
 
   &--dark {
     color: getColor("primary");
@@ -18,7 +29,6 @@
   &--position {
     display: flex;
     justify-content: center;
-    margin-left: 100px;
 
     @include desktop {
       margin-left: 0;
