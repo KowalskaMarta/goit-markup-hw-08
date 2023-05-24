@@ -8,6 +8,10 @@
     justify-content: flex-start;
     gap: 0;
 
+    @include tablet {
+      justify-content: flex-start;
+      margin-top: 5px;
+    }
     @include desktop {
       margin-left: 70px;
       margin-top: 0;

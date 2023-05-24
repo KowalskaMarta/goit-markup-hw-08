@@ -26,13 +26,4 @@
   &--footer {
     margin-right: 0;
   }
-
-  &--position {
-    display: flex;
-    justify-content: center;
-
-    @include desktop {
-      margin-left: 0;
-    }
-  }
 }

@@ -180,19 +180,6 @@ nav {
 .logo--footer {
   margin-right: 0;
 }
-.logo--position {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-@media screen and (min-width: 1200px) {
-  .logo--position {
-    margin-left: 0;
-  }
-}
 
 .menu {
   display: -webkit-box;
@@ -950,13 +937,13 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .workers__photo > img {
   vertical-align: middle;
@@ -1006,6 +993,14 @@ nav {
       -ms-flex-pack: start;
           justify-content: flex-start;
   gap: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social--footer {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 5px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .social--footer {
@@ -1280,31 +1275,19 @@ nav {
 }
 
 .newsletter {
-  margin: auto;
-}
-@media screen and (min-width: 1200px) {
-  .newsletter {
-    margin-left: 70px;
-  }
+  margin-top: 60px;
 }
 .newsletter__tittle {
   text-transform: uppercase;
   color: #ffffff;
   font-size: 14px;
   line-height: 1.15;
-  margin-top: 60px;
   margin-bottom: 20px;
-}
-@media screen and (min-width: 1200px) {
-  .newsletter__tittle {
-    margin-bottom: 20px;
-    margin-top: 0;
-  }
 }
 .newsletter__input {
   height: 50px;
-  width: 450px;
-  padding-top: 20px;
+  width: 340px;
+  padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
   background-color: transparent;
@@ -1313,12 +1296,10 @@ nav {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  margin-bottom: 20px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .newsletter__input {
-    width: 358px;
-    padding-top: 15px;
+    width: 450px;
   }
 }
 .newsletter__input:focus {

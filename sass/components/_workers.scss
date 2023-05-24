@@ -50,8 +50,8 @@
 
   &__photo {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
 
     & > img {
       vertical-align: middle;
@@ -59,7 +59,6 @@
       height: auto;
     }
   }
-
   & figcaption {
     padding: 30px 0;
     margin-left: 15px;
