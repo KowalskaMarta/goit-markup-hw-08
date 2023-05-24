@@ -2,7 +2,7 @@
   @include font($fw: 700, $fs: 26px, $lh: 1.17);
   font-family: getFont("ral");
   color: getColor("secondary");
-  width: 134px;
+  // width: 134px;
 
   @include tablet {
     margin-right: 83px;
@@ -14,6 +14,12 @@
 
   &__header {
     margin-left: 15px;
+    @include tablet {
+      margin-right: 0px;
+    }
+    @include desktop {
+      margin-right: 0px;
+    }
   }
 
   &--dark {
@@ -25,5 +31,11 @@
 
   &--footer {
     margin-right: 0;
+    @include tablet {
+      margin-right: 0px;
+    }
+    @include desktop {
+      margin-right: 0px;
+    }
   }
 }
