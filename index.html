@@ -34,25 +34,24 @@
           </ul>
         </nav>
         <div class="contact contact--isHide">
-          <a class="contact__link" href="mailto:info@devstudio.com"
-            ><svg class="mail-icon" width="16" height="12">
+          <a class="contact__link" href="mailto:info@devstudio.com"><svg class="mail-icon" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
-            info@devstudio.com</a
-          >
-          <a class="contact__link" href="tel:+48111111111"
-            ><svg class="phone-icon" width="10" height="16">
+            info@devstudio.com</a>
+          <a class="contact__link" href="tel:+48111111111"><svg class="phone-icon" width="10" height="16">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
-            +48 111 111 111</a
-          >
+            +48 111 111 111</a>
         </div>
-      </div>
-      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+
+<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg class="mobile-menu__icon" width="40" height="40">
           <use href="./images/icons.svg#icon-menu_24px"></use>
         </svg>
       </button>
+
+      </div>
+      
   
     <div class="mobile-menu js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
@@ -78,9 +77,7 @@
             <a href="tel:+48111111111" class="mobile-menu__tel mobile-menu__tel--link">+48 111 111 111</a>
           </span>
           <span class="mobile-menu__mail">
-            <a href="mailto:info@devstudio.com" class="mobile-menu__mail mobile-menu__mail--link"
-              >info@devstudio.com</a
-            >
+            <a href="mailto:info@devstudio.com" class="mobile-menu__mail mobile-menu__mail--link">info@devstudio.com</a>
           </span>
           <ul class="mobile-menu__socials">
             <li class="mobile-menu__socials mobile-menu__socials--item">
@@ -98,7 +95,8 @@
           </ul>
         </div>
       </div>
-    </header>
+    </div></header>
+
     <main>
       <section class="section central">
         <div class="container">
@@ -266,7 +264,7 @@
           <h2 class="workers__title">Nasz zespół</h2>
           <ul class="workers__list">
             <li class="workers__item">
-              <figure>
+              <figure class="workers__photo">
               <img
                 src="./images/zespol/img_jd1.jpg"
                 srcset="./images/zespol/img_jd1.jpg  270w,
@@ -303,7 +301,7 @@
              </figcaption></figure>
                 </li>
                 <li class="workers__item">
-                  <figure>
+                  <figure class="workers__photo">
                   <img
                   src="./images/zespol/img_jd2.jpg"
                   srcset="./images/zespol/img_jd2.jpg  270w,
@@ -339,7 +337,7 @@
                  </figcaption></figure>
                     </li>
                     <li class="workers__item">
-                      <figure>
+                      <figure class="workers__photo">
                       <img
                       src="./images/zespol/img_jd3.jpg"
                       srcset="./images/zespol/img_jd3.jpg  270w,
@@ -376,7 +374,7 @@
                      </figcaption></figure>
                         </li>
                         <li class="workers__item">
-                          <figure>
+                          <figure class="workers__photo">
                           <img
                           src="./images/zespol/img_jd4.jpg"
                           srcset="./images/zespol/img_jd4.jpg  270w,
@@ -454,6 +452,7 @@
     <!-- footer -->
     <footer class="footer">
       <div class="footer__flex container">
+        <div class="footer__contacts">
         <div class="address">
           <a class="logo logo--position" href="#">Web<span class="logo--bright logo--footer">Studio</span></a>
           <address class="address--footer">
@@ -487,25 +486,21 @@
             </a>
           </div>
         </div>
+    </div>
+
         <div class="newsletter">
           <h4 class="newsletter__tittle">Zapisz się do newslettera</h4>
           <form action="" name="newsletter-form">
             <label for="">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="E-mail"
-                class="newsletter__input"
-              />
+              <input type="email" name="email" id="email" placeholder="E-mail" class="newsletter__input">
               <button type="submit" class="button newsletter__button">
                 <span>Zapisz się</span>
               <svg width="24px" height="24px">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
-          </form>
-        </div>
+          
+        </label></form></div>
       </div>
     </footer>
     
