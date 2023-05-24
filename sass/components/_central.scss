@@ -10,6 +10,7 @@
     url(../images/main-foto-480.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
 
   @include desktop {
     padding: 200px 0;

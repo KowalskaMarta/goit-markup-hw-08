@@ -444,6 +444,7 @@ nav {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-foto-480.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
 }
 @media screen and (min-width: 1200px) {
   .central {
