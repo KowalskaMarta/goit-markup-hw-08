@@ -48,13 +48,13 @@
     color: getColor("bright");
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     width: 365px;
     padding: 0px 0px 30px 0px;
 
     @include desktop {
       @include font($fw: 900, $fs: 44px, $lh: 1.4);
-      padding: 0 200px;
+      width: 696px;
     }
   }
 }
