@@ -435,6 +435,14 @@ nav {
     background-position: center;
   }
 }
+.central__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .central__title {
   font-weight: 900;
   font-size: 26px;
@@ -443,6 +451,8 @@ nav {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
+  width: 365px;
+  padding: 0px 0px 30px 0px;
 }
 @media screen and (min-width: 1200px) {
   .central__title {
@@ -873,28 +883,24 @@ nav {
 .workers {
   text-align: center;
 }
-.workers img {
-  width: 450px;
-  height: 460px;
-}
-@media screen and (min-width: 1200px) {
-  .workers img {
-    width: 270px;
-    height: 260px;
-  }
-}
 .workers__title {
   color: #212121;
-  text-align: center;
-  padding-top: 0px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  margin-bottom: 30px;
 }
 .workers__list {
-  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style: none;
-  gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -902,15 +908,7 @@ nav {
   .workers__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin-top: 50px;
   }
 }
 .workers__item {
@@ -918,9 +916,7 @@ nav {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 480px;
-  margin-left: 15px;
-  margin-right: 15px;
+  width: 450px;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -952,8 +948,6 @@ nav {
 }
 .workers figcaption {
   padding: 30px 0;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 .workers__description {
   font-weight: 500;
@@ -1296,6 +1290,7 @@ nav {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .newsletter__input {
