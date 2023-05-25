@@ -1,17 +1,20 @@
 .project {
   &__list {
     @include flex-position;
-    flex-wrap: column;
+    flex-direction: column;
     gap: 30px;
+    margin-top: 40px;
 
     @include tablet {
       flex-wrap: wrap;
       flex-direction: row;
+      margin-top: 30px;
     }
 
     @include desktop {
       flex-wrap: wrap;
       flex-direction: row;
+      margin-top: 50px;
     }
   }
 
@@ -44,8 +47,6 @@
 
   &__photo {
     position: relative;
-    // width: 370px;
-    // height: 294px;
     overflow: hidden;
 
     & > img {
