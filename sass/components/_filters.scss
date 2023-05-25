@@ -2,17 +2,14 @@
   @include tablet {
     margin-bottom: 30px;
     flex-wrap: nowrap;
-    flex-basis: auto;
   }
 
   &__list {
     display: flex;
-    // align-items: center;
     justify-content: flex-start;
     list-style: none;
     flex-wrap: wrap;
     gap: 8px;
-    max-width: 450px;
 
     @include tablet {
       justify-content: center;
@@ -20,6 +17,7 @@
 
     @include desktop {
       justify-content: center;
+      align-items: center;
     }
   }
 

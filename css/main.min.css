@@ -1160,8 +1160,6 @@ nav {
     margin-bottom: 30px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
   }
 }
 .filters__list {
@@ -1175,7 +1173,6 @@ nav {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 8px;
-  max-width: 450px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .filters__list {
@@ -1189,6 +1186,9 @@ nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .filters__button {
