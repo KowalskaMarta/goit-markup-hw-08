@@ -1,14 +1,19 @@
 .filters {
+  // margin-top: 60px;
+  // max-width: 480px;
+
   @include tablet {
     margin-bottom: 30px;
   }
 
   &__list {
-    @include flex-center;
-    margin-bottom: 50px;
-    gap: 10px;
+    display: flex;
+    // align-items: center;
     justify-content: flex-start;
-    flex-flow: row wrap;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 450px;
 
     @include tablet {
       justify-content: center;
@@ -24,7 +29,7 @@
 
   &__button {
     color: getColor("primary");
-    max-height: 38px;
+    // max-height: 38px;
     width: auto;
     background-color: getColor("bgc-secondary");
     @include font($fw: 500, $fs: 16px, $lh: 1.6);
