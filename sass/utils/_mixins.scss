@@ -16,19 +16,19 @@ $tablet-end: 1199px;
 $desktop-start: 1200px;
 
 @mixin phone {
-  @media screen and (min-width: #{$phone-end}) {
+  @media screen and (min-width: 767px) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media screen and (min-width: #{$tablet-start}) and (max-width: #{$tablet-end}) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media screen and (min-width: #{$desktop-start}) {
+  @media screen and (min-width: 1200px) {
     @content;
   }
 }

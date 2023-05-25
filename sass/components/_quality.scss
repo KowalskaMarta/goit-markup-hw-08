@@ -30,7 +30,7 @@
     border-radius: 4px;
     padding-top: 25px;
     padding-bottom: 25px;
-    @include flex-center;
+    @include flex-position;
   }
   &__title {
     color: getColor("primary");

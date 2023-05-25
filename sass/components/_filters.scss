@@ -1,9 +1,8 @@
 .filters {
-  // margin-top: 60px;
-  // max-width: 480px;
-
   @include tablet {
     margin-bottom: 30px;
+    flex-wrap: nowrap;
+    flex-basis: auto;
   }
 
   &__list {
