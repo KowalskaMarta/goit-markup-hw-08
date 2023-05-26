@@ -511,6 +511,7 @@ nav {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: #2196f3;
   color: #ffffff;
+  border: none;
 }
 .button:is(:hover, :focus) {
   background-color: rgb(25, 117, 191);
@@ -558,6 +559,7 @@ nav {
   max-width: 450px;
   background-color: #ffffff;
   margin: 0;
+  padding: 0 40px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -568,8 +570,14 @@ nav {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
-    height: 581px;
+    max-width: 528px;
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    max-width: 528px;
+    padding: 0 40px;
   }
 }
 .modal__close {
@@ -600,12 +608,22 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    margin-top: 40px;
+  }
 }
 .modal__label {
   position: relative;
-  margin-left: 40px;
+  margin: 0 auto;
   display: block;
   background-color: #ffffff;
   cursor: pointer;
@@ -630,13 +648,13 @@ nav {
   height: 12px;
   width: 12px;
   left: 15px;
-  top: 37px;
+  top: 33px;
   z-index: 1;
 }
 .modal__textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 370px;
+  width: 260px;
   height: 120px;
   padding-left: 16px;
   padding-top: 12px;
@@ -645,8 +663,18 @@ nav {
           align-items: start;
   resize: none;
 }
+@media screen and (min-width: 1200px) {
+  .modal__textarea {
+    width: 448px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal__textarea {
+    width: 370px;
+  }
+}
 .modal__input {
-  width: 370px;
+  width: 260px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -656,6 +684,16 @@ nav {
   padding-top: 10px;
   outline: none;
 }
+@media screen and (min-width: 1200px) {
+  .modal__input {
+    width: 448px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal__input {
+    width: 370px;
+  }
+}
 .modal__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -664,7 +702,17 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__btn {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal__btn {
+    margin-bottom: 40px;
+  }
 }
 .modal__checkbox {
   padding-top: 20px;
@@ -1012,6 +1060,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 10px;
 }
 .social--footer {
   margin-top: 60px;

@@ -1,5 +1,6 @@
 .social {
   @include flex-position;
+  gap: 10px;
 
   &--footer {
     margin-top: 60px;
