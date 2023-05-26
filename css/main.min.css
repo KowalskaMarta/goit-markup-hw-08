@@ -393,7 +393,7 @@ nav {
 }
 .mobile-menu__tel {
   margin-top: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 .mobile-menu__tel--link {
   font-weight: 500;
@@ -402,7 +402,7 @@ nav {
   color: #2196f3;
 }
 .mobile-menu__mail {
-  margin-bottom: 64px;
+  margin-bottom: 60px;
 }
 .mobile-menu__mail--link {
   font-weight: 500;
